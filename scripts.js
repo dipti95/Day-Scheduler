@@ -14,7 +14,7 @@ for (var i = 0; i < list.length; i++) {
     if ($(".list-group-item")[i].value > parseInt(currentTime)) {
         $("#" + i).addClass("future");
         $("#input-" + i).addClass("future");
-        e
+
     } else if ($(".list-group-item")[i].value === parseInt(currentTime)) {
         $("#" + i).addClass("present");
         $("#input-" + i).addClass("present");
@@ -79,5 +79,3 @@ checkButton.on("click", function (event) {
     var removeText = " ";
     localStorage.setItem(removeValue, removeText);
 });
-
-
