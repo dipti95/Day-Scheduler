@@ -11,11 +11,11 @@ $("#day-display").text(dayDisplay);
 
 for (var i = 0; i < list.length; i++) {
 
-    if ($(".list-group-item")[i].value > parseInt(currentTime)) {
+    if (list[i].value > parseInt(currentTime)) {
         $("#" + i).addClass("future");
         $("#input-" + i).addClass("future");
 
-    } else if ($(".list-group-item")[i].value === parseInt(currentTime)) {
+    } else if (list[i].value === parseInt(currentTime)) {
         $("#" + i).addClass("present");
         $("#input-" + i).addClass("present");
 
