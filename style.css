@@ -1,0 +1,93 @@
+
+ .jumbotron {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+
+.day {
+    font-weight: bold;
+    margin: 40px 0 0 0;
+}
+
+
+.instructions {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+
+.list-group {
+    display: block;
+    height: 1200px;
+    width: 70%;
+    margin: auto;
+}
+
+
+.list-group-item {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.time-slot {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+
+input {
+    border: 0;
+    overflow:auto;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+/* changes size and background color of button on right side of rows */
+.check-button {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: teal;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* rows change color based off of what class is assigned to them */
+.past {
+    background-color: lightgray;
+}
+
+.present {
+    background-color: rgb(132, 236, 132);
+}
+
+.future {
+    background-color: rgb(141, 141, 247);
+}
+
+/* puts a line through text that is assigned this class */
+.complete {
+    text-decoration: line-through;
+    text-decoration-color: rgb(253, 92, 92);
+    font-style: italic;
+    color: rgb(73, 68, 68);
+}
+
+/* changes scheduler to adjust size on smaller screens */
+@media only screen and (max-width: 600px) {
+    .list-group {
+        width: 100%;
+    }
+}
